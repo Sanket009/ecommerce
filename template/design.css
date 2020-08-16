@@ -1,0 +1,162 @@
+html{
+font-size: 62.5%;
+box-sizing: border-box;
+}
+body{
+font: 1.6rem Helvetica;
+height:100vh; 
+margin: 0;
+background-color:whitesmoke;
+}
+.grid{
+display: grid;
+grid-template-areas:
+ "header"
+"main"
+"footer";
+grid-template-columns:1fr;
+grid-template-rows:5rem 1fr 5rem;
+height: 100%;
+}
+
+.menu{
+    font-size: 1rem;
+    padding: 9rem;
+    background: black;
+    border:green;
+    color:black;
+     cursor: pointer;
+    }
+.header{
+grid-area:header;
+background-color:black;
+color:white;
+display: flex;
+align-items: center;
+padding: 2rem;
+justify-content: space-between;
+}
+.headlink a{
+color:khaki;
+font-weight: bold;
+font-family: 'Times New Roman', Times, serif;
+text-decoration: none;
+text-shadow: black;
+
+}
+.headlink a:hover{
+    color: orange;
+}
+.brand a{
+font-weight: bold;
+color:khaki;
+font-size: 4rem;
+height: 4rem;
+    justify-content: space-between;
+cursor: pointer;
+}
+.brand a:hover{
+color: orange;
+
+}
+.main{
+    grid-area: main;
+    text-align: center;
+    text-decoration: none;
+}
+.footer{
+
+    grid-area: footer;
+    padding:1rem;
+    background-color:black ;
+    color:wheat;
+    text-decoration: none;   
+    display: flex flex;
+    justify-content: space-between;
+    
+    bottom: 0;
+    align-items: center;
+}
+a{
+text-decoration: none;
+height: 4rem;
+
+
+}
+a:hover{
+    color: orange;
+}
+.products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    animation: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+.stuffimg{
+height:50rem;
+width: 50rem;
+
+}
+.product{
+display: flex;
+justify-content: space-between;
+height: 100%;
+flex-direction: column;
+}
+.products li{
+    padding: 0;
+    list-style-type: none;
+    flex: 1rem;
+    margin: 1rem;
+ align-items: center;
+    border-bottom: khaki;
+
+}
+.brand button{
+    font-size: 3rem;
+    padding: .5rem;
+    background: none;
+    color:khaki;
+    border: none;
+	cursor:pointer;
+	
+}
+ .brand button a:hover{
+	
+	color:orange;
+}
+
+
+.productname{
+    font-size: 2rem;
+    font-weight: bold;
+    
+}
+.price{
+font-size: 2.5rem;
+align-content: center;
+
+}
+
+.sidebar{
+position: fixed;
+transform: translateX(-30rem);
+width: 30rem;
+height: 100%;
+background-color: lavender;
+backface-visibility: visible;
+
+}
+.sidebar.open{
+
+transform: translateX(0);
+}
+
+.cross{
+    cursor: pointer;
+    position:absolute;
+    top:1.5rem;
+    right: .5rem;
+    background-color: red;
+}

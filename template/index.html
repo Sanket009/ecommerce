@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <html>
+<head>
+    <link rel="stylesheet" href="design.css">
+    <title>Nepali merch</title>
+</head>
+    
+<body>
+        <div class="grid">
+        <header class="header">
+           <div class="brand">
+                <button onclick="openMenu()">
+                &#9776;
+                </button>
+                <a href="index.html">Nepali Merch</a>
+               </div>
+         
+            <div class="headlink">
+            <a href="Sign.html">|Sign In|</a>
+            <a href="cart.html">|Doko(Cart)|</a>
+        </div>    
+    </header>
+    <aside class="sidebar">
+        <h3>shopping items</h3>
+        <button class="cross" onclick="closeMenu()">x</button>
+        <ul>
+            <li>
+                <a href="index.html">fooditems</a></li>
+            <li><a href="index.html">Clothing</a></li>
+        </ul>
+    </aside>
+  
+    <main class="main"> 
+    <div class="content">
+    <ul class="products">
+    <li>
+      <div class="product">
+        <img class="stuffimg" src="images/a.jpg"  alt="product image">
+        <div class="productname">
+            <a href="productname.html">Dhaka Topi</a>
+            </div>
+      <div class="price">$4</div>
+      </div>
+  </li> 
+  <li>
+    <div class="product">
+      <img class="stuffimg" src="images/a.jpg"  alt="product image">
+      <div class="productname">
+          <a href="productname.html">Dhaka Topi</a>
+          </div>
+    <div class="price">$4</div>
+    <div class="rating"></div>
+    </div>
+</li> 
+<li>
+    <div class="product">
+      <img class="stuffimg" src="images/a.jpg"  alt="product image">
+      <div class="productname">
+          <a href="productname.html">Dhaka Topi</a>
+          </div>
+    <div class="price">$4</div>
+    <div class="rating"></div>
+    </div>
+</li>  
+    </ul>
+</div>
+</main>
+<footer class="footer">
+copyright sanket design.
+     </footer> 
+        </div>
+<script>
+function openMenu(){
+document.querySelector(".sidebar").classList.add("open")
+}
+function closeMenu(){
+document.querySelector(".sidebar").classList.remove("open")
+}
+</script>    
+</body>
+</html>
